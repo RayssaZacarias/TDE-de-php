@@ -1,22 +1,21 @@
 <?php
 
-$input = explode(" ", trim(fgets(STDIN)));
-$n = intval($input[0]);
-$h = intval($input[1]);
+$n = 6;
+$h = 120;
 
 
-$alturas_minimas = explode(" ", trim(fgets(STDIN)));
+$alturas_minimas = [200, 90, 123, 100, 120, 169];
 
 $brinquedos_permitidos = 0;
 for ($i = 0; $i < $n; $i++) {
-    $altura_minima = intval($alturas_minimas[$i]);
-    
 
-    if ($h >= $altura_minima) {
+    
+    if ($h >= $alturas_minimas[$i]) {
         $brinquedos_permitidos++;
     }
 }
 
 
 echo $brinquedos_permitidos . "\n";
+
 ?>

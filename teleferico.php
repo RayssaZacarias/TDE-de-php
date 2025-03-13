@@ -1,7 +1,7 @@
 <?php
 
-$c = intval(trim(fgets(STDIN)));
-$a = intval(trim(fgets(STDIN)));
+$c = 10;
+$a = 20;
 
 
 $alunos_por_viagem = $c - 1;
